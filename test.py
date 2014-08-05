@@ -3,11 +3,10 @@ import timeit
 
 
 t = timeit.Timer("""
-A= int(random.randint(2, 2**20))
-factor.factor(A)
-print bin(A)
+A = int(random.randint(2, 2**50))
+collatz.repeat(A)
 """,
-"""import factor
+"""import collatz 
 import random
 """)
 
@@ -24,4 +23,10 @@ factor.factor(A)
 
 """
 bogosort.bogosort([1,2,3,4,5,6,7])
+"""
+
+"""
+A= int(random.randint(2, 2**20))
+factor.factor(A)
+print bin(A)
 """

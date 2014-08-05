@@ -24,5 +24,6 @@ def erat_sieve(num):
 			x+=1
 		i+=1
 	print num_list
+	print str(len(num_list)) + " elements"
 
 erat_sieve(int(sys.argv[1]))
